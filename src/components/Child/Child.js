@@ -16,6 +16,7 @@ export default class Child extends Component {
       <Segment>
         <Header as='h3'>Child</Header>
         <pre><code>this.state.counter:</code> <code>{this.state.counter}</code></pre>
+        <Button onClick={this.props.triggerAppUpdate}>Update App</Button>
         <Button onClick={this.props.triggerGrandparentUpdate}>Update Grandparent</Button>
         <Button onClick={this.props.triggerParentUpdate}>Update Parent</Button>
       </Segment>

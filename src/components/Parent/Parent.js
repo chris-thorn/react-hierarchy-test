@@ -26,6 +26,7 @@ export default class Parent extends Component {
         <Header as='h3'>Parent</Header>
         <pre><code>this.state.counter:</code> <code>{this.state.counter}</code></pre>
         <Child
+          triggerAppUpdate={this.props.triggerAppUpdate}
           triggerGrandparentUpdate={this.props.triggerGrandparentUpdate}
           triggerParentUpdate={this.updateParentCounter}
         />

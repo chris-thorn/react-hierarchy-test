@@ -25,7 +25,10 @@ export default class Grandparent extends Component {
       <Segment>
         <Header as='h3'>Grandparent</Header>
         <pre><code>this.state.counter:</code> <code>{this.state.counter}</code></pre>
-        <Parent triggerGrandparentUpdate={this.updateGrandparentCounter} />
+        <Parent
+          triggerAppUpdate={this.props.triggerAppUpdate}
+          triggerGrandparentUpdate={this.updateGrandparentCounter}
+        />
       </Segment>
     );
   }
